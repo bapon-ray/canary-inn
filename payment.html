@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canary Inn/Payment</title>
+    <link rel="shortcut icon"
+        href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyUqIzQIsoMvdaFLWOHcztVtPryE6ctKrF3Q&s"
+        type="image/x-icon">
+    <!-- style -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- query -->
+    <link rel="stylesheet" href="css/query.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <div class="payment-container">
+        <div class="home-back">
+            <a href="./index.html">Go Back To Home</a>
+        </div>
+        <div class="payment-wrapper">
+            <div class="payment">
+                <div class="paypal">
+                    <input type="radio" name="a">
+                    <span>Paypal</span>
+
+                    <img class="paypal-i" src="./Src/paypal.png" alt="">
+                </div>
+                <div class="atm">
+                    <input type="radio" name="a">
+                    <span>Debit/Credit Card</span>
+
+                    <img class="payment-i" src="./Src/pay.png" alt="">
+                </div>
+                <div class="card-no">
+                    <div class="no">
+                        <span>Card no</span>
+                        <input type="number">
+                    </div>
+                    <div class="expiry">
+                        <div class="upper-ex">
+                            <span>Expiry</span>
+                            <input type="date">
+                        </div>
+                        <div class="ex-content">
+                            <span>CVV</span>
+                            <input type="number">
+                        </div>
+                    </div>
+                </div>
+                <div class="qr">
+                    <input type="radio" name="a">
+                    <span>Qr</span>
+                    <img src="" alt="">
+                </div>
+
+                <center>
+
+                    <button class="cta">
+                        <span>Submit</span>
+                        <svg width="15px" height="10px" viewBox="0 0 13 10">
+                            <path d="M1,5 L11,5"></path>
+                            <polyline points="8 1 12 5 8 9"></polyline>
+                        </svg>
+                    </button>
+                </center>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- script -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
