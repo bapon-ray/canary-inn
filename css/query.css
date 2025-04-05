@@ -1,0 +1,379 @@
+@media screen and (max-width: 1366px) {
+
+    .nav {
+        padding: 0rem 5rem;
+    }
+
+    .discribe-text {
+        padding: 0rem 5rem;
+    }
+
+    .rooms {
+        padding: 1rem 5rem;
+    }
+
+    .rooms-all {
+        padding: 1rem 5rem;
+    }
+
+    .all-room {
+        flex-wrap: wrap;
+        gap: 1rem;
+        justify-content: start;
+    }
+
+
+    .about-founder {
+        padding: 1rem 5rem;
+    }
+
+    .forms {
+        padding: 0rem 5rem;
+    }
+
+}
+
+@media screen and (max-width: 765px) {
+
+    .nav {
+        padding: 0rem 1rem;
+    }
+
+    .discribe-text {
+        padding: 0rem 2rem;
+    }
+
+    .navLinks {
+        display: block;
+        background-color: var(--navLinks-bg);
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: 100%;
+        z-index: 100;
+        opacity: 0;
+        visibility: visible;
+        transition: var(--transition-all);
+        z-index: -100;
+        overflow: hidden;
+    }
+
+    .navLinks ul {
+        width: 85%;
+        height: 100vh;
+        background-color: var(--nav-logo);
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 0);
+        bottom: -500px;
+        display: flex;
+        flex-direction: column;
+        padding: 80px 25px;
+        transition: var(--transition-all);
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    .navLinks ul li {
+        border-bottom: 1px solid var(--navLinks-ul-li-border);
+        padding-bottom: 10px;
+    }
+
+    .navLinks ul li a {
+        color: #fff !important;
+        font-size: .9rem !important;
+    }
+
+
+    .logoBottom {
+        display: none;
+    }
+
+    .hamberger {
+        display: block;
+    }
+
+    .hamberger .line {
+        width: 22px;
+        height: 2px;
+        background-color: var(--hamberger-line);
+        margin: 5px;
+    }
+
+    .backHamberger {
+        display: block;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 0);
+        top: -70px;
+        color: #fff;
+        font-size: 1.2rem;
+        background-color: var(--nav-logo);
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+    }
+
+    .hero-head {
+        font-size: 3.5rem;
+    }
+
+    .hero-p {
+        font-size: 1.1rem;
+        margin-top: 10px;
+    }
+
+    .discribe-text {
+        padding: 0rem 1rem;
+        font-size: 1rem;
+    }
+
+    .plants-btn {
+        font-size: 14px;
+    }
+
+    .button {
+        width: 280px;
+        height: 50px;
+    }
+
+    footer {
+        height: fit-content;
+    }
+
+    .footer-con {
+        width: 100%;
+        padding-left: 15px;
+    }
+
+    .f-l-main {
+        height: fit-content;
+    }
+
+    .f-l-main {
+        flex-direction: column;
+    }
+
+    .footer-link {
+        height: fit-content;
+        margin-bottom: 25px;
+    }
+
+    .l-1 {
+        margin-top: 35px;
+        margin-bottom: 35px;
+    }
+
+    .c-right-con {
+        width: 90%;
+        height: fit-content;
+        flex-direction: column;
+    }
+
+    .c-right {
+        margin: 20px 0px;
+    }
+
+    .c-1 {
+        height: fit-content;
+        background-color: #ffffff;
+        text-align: center;
+    }
+
+    .c-2 {
+        text-align: center;
+        margin-top: 8px;
+    }
+
+    .p-1 {
+        margin-bottom: 8px;
+    }
+
+    .f-i-link {
+        margin-top: 8px;
+    }
+
+    .footer-head {
+        margin-bottom: 10px;
+    }
+
+    .footer-link h4 {
+        margin-bottom: 10px;
+    }
+
+    .f-lnk ul li {
+        margin-bottom: 8px;
+    }
+
+    .footer-container p {
+        font-size: .8rem;
+    }
+
+    /* footer end */
+
+    /* room page */
+
+    .room-deatils {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .rooms {
+        padding: 0rem 1rem;
+        margin-top: 1.5rem;
+    }
+
+    .card {
+        max-width: 90%;
+    }
+
+    .premium-rooms {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card_box {
+        width: 90%;
+    }
+
+    .room-head {
+        font-size: 2rem;
+    }
+
+    .room-desc {
+        text-align: center;
+        font-size: 1rem;
+        padding: 0rem 3rem;
+    }
+
+    /* room page end */
+
+
+    /* photo pages */
+
+    .photo-header h1 {
+        font-size: 2rem;
+    }
+
+    .photo-header p {
+        font-size: 1rem;
+    }
+
+    .rooms-all {
+        padding: 1rem 1rem;
+    }
+
+    .all-room {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1.2rem;
+    }
+
+    .room-head .single-head {
+        padding: 0rem;
+        text-align: center;
+    }
+
+    .photo-card {
+        width: 100%;
+    }
+
+    /* photos pages */
+
+
+
+
+    /* about page */
+    .about-head {
+        font-size: 2rem;
+    }
+
+    .about-header p {
+        font-size: 1rem;
+    }
+
+    .about-founder {
+        flex-direction: column;
+        padding: 1rem 1rem;
+    }
+
+    .about-founder-img img {
+        width: 100%;
+    }
+
+    .about-founder-det h2 {
+        font-size: 1.5rem;
+    }
+
+    .about-founder-det p {
+        font-size: 1rem;
+    }
+
+    /* about page end */
+
+
+
+    /* form page */
+    .forms {
+        flex-direction: column;
+        justify-content: center;
+        gap: 50px;
+        padding: 5rem 1rem;
+    }
+
+    .booking-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .booking-content h2 {
+        width: 80%;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .booking-content p {
+        width: 80%;
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    .form {
+        width: 100%;
+    }
+
+    /* form page end */
+
+
+
+    /* payment page */
+    .card-no {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .paypal,
+    .atm,
+    .no,
+    .expiry,
+    .qr span {
+        font-size: .8rem;
+    }
+
+    .final-btn button {
+        font-size: .7rem;
+    }
+
+    .home-back a {
+        font-size: .7rem;
+    }
+
+    .payment-i {
+        height: 10px;
+    }
+}
