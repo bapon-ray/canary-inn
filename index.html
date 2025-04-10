@@ -2,386 +2,454 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Canary Inn</title>
-    <link rel="shortcut icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyUqIzQIsoMvdaFLWOHcztVtPryE6ctKrF3Q&s" type="image/x-icon">
-    <!-- style -->
-    <link rel="stylesheet" href="css/style.css">
-    <!-- query -->
-    <link rel="stylesheet" href="css/query.css">
-    <!-- font awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Link Swiper's CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <title>Canary Inn</title>
+  <link rel="shortcut icon"
+    href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyUqIzQIsoMvdaFLWOHcztVtPryE6ctKrF3Q&s"
+    type="image/x-icon" />
+  <!-- style -->
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- query -->
+  <link rel="stylesheet" href="css/query.css" />
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
 <body>
-    <!-- header -->
-    <header class="header">
-        <nav class="nav">
-            <div class="logo">
-                <img src="Src/logo.png" alt="">
-                <h1>CANARY INN</h1>
+  <!-- header -->
+  <header class="header">
+    <nav class="nav">
+      <div class="logo">
+        <img src="Src/logo.png" alt="" />
+        <h1>CANARY INN</h1>
 
-                <!-- <h4 class="logoBottom">
+        <!-- <h4 class="logoBottom">
                     <a href="/">Hotel</a>
                 </h4> -->
-            </div>
+      </div>
 
-            <div class="navLinks">
-                <ul class="navLinks-ul">
-                    <div class="backHamberger">
-                        <div class="back">
-                            <i class="fa-solid fa-xmark"></i>
-                        </div>
-                    </div>
-                    <li>
-                        <a href="./index.html">
-                            Home
-                            <div class="h-border"></div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="room.html">Room
-                            <div class="h-border"></div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="room.html">Photos
-                            <div class="h-border"></div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="about.html">About Us
-                            <div class="h-border"></div>
-                        </a>
-                    </li>
-                </ul>
+      <div class="navLinks">
+        <ul class="navLinks-ul">
+          <div class="backHamberger">
+            <div class="back">
+              <i class="fa-solid fa-xmark"></i>
             </div>
+          </div>
+          <li>
+            <a href="./index.html">
+              Home
+              <div class="h-border"></div>
+            </a>
+          </li>
+          <li>
+            <a href="room.html">Room
+              <div class="h-border"></div>
+            </a>
+          </li>
+          <li>
+            <a href="room.html">Photos
+              <div class="h-border"></div>
+            </a>
+          </li>
+          <li>
+            <a href="about.html">About Us
+              <div class="h-border"></div>
+            </a>
+          </li>
+        </ul>
+      </div>
 
-            <div class="hamberger">
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
-            </div>
-        </nav>
-    </header>
-    <!-- header end -->
+      <div class="hamberger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+    </nav>
+  </header>
+  <!-- header end -->
+
+  <div class="form_area">
+
+    <h1>Ckeck Room Availability & Book Now !</h1>
+
+
+    <div class="search-bar">
+      <!-- Date Picker -->
+      <div class="search-item">
+        📅
+        <input type="date" id="checkin" />
+        —
+        <input type="date" id="checkout" />
+      </div>
+  
+      <!-- Guests -->
+      <div class="search-item">
+        👤
+        <select id="adults">
+          <option value="1">1 adult</option>
+          <option value="2" selected>2 adults</option>
+          <option value="3">3 adults</option>
+        </select>
+        <select id="children">
+          <option value="0" selected>0 children</option>
+          <option value="1">1 child</option>
+          <option value="2">2 children</option>
+        </select>
+      </div>
+  
+      <!-- Search -->
+      <button class="search-button">Check Availability</button>
+    </div>
+
+    
+
+    </div>
 
     <!-- main -->
     <div class="hero">
-        <!-- Swiper -->
-        <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <img src="https://images.pexels.com/photos/1134176/pexels-photo-1134176.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                        alt="">
-                    <div class="hero-container">
-                        <div class="hero-content">
-                            <h2 class="hero-head">Explore And Enjoy</h2>
-                            <p class="hero-p">Book Your Room Now.</p>
+      <!-- Swiper -->
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img
+              src="https://images.pexels.com/photos/1134176/pexels-photo-1134176.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              alt="" />
+            <div class="hero-container">
+              <div class="hero-content">
+                <h2 class="hero-head">Explore And Enjoy</h2>
+                <p class="hero-p">Book Your Room Now.</p>
 
-                            <a href="book.html" class="hero-btn">
-                                <div class="container">
-                                    <a target="_blank" href="book.html" class="button type--C">
-                                        <div class="button__line"></div>
-                                        <div class="button__line"></div>
-                                        <span class="button__text">Booking</span>
-                                        <div class="button__drow1"></div>
-                                        <div class="button__drow2"></div>
-                                    </a>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <img src="https://images.pexels.com/photos/161758/governor-s-mansion-montgomery-alabama-grand-staircase-161758.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                        alt="">
-                    <div class="hero-container">
-                        <div class="hero-content">
-                            <h2 class="hero-head">Explore And Enjoy</h2>
-                            <p class="hero-p">Book Your Room Now</p>
-
-                            <a href="book.html" class="hero-btn">
-                                <div class="container">
-                                    <a target="_blank" href="book.html" class="button type--C">
-                                        <div class="button__line"></div>
-                                        <div class="button__line"></div>
-                                        <span class="button__text">Booking</span>
-                                        <div class="button__drow1"></div>
-                                        <div class="button__drow2"></div>
-                                    </a>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <img src="https://images.pexels.com/photos/258154/pexels-photo-258154.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                        alt="">
-                    <div class="hero-container">
-                        <div class="hero-content">
-                            <h2 class="hero-head">Explore And Enjoy</h2>
-                            <p class="hero-p">Book Your Room Now</p>
-
-                            <a href="book.html" class="hero-btn">
-                                <div class="container">
-                                    <a target="_blank" href="book.html" class="button type--C">
-                                        <div class="button__line"></div>
-                                        <div class="button__line"></div>
-                                        <span class="button__text">Booking</span>
-                                        <div class="button__drow1"></div>
-                                        <div class="button__drow2"></div>
-                                    </a>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <img src="https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                        alt="">
-                    <div class="hero-container">
-                        <div class="hero-content">
-                            <h2 class="hero-head">Explore And Enjoy</h2>
-                            <p class="hero-p">Book Your Room Now</p>
-
-                            <a href="book.html" class="hero-btn">
-                                <div class="container">
-                                    <a target="_blank" href="book.html" class="button type--C">
-                                        <div class="button__line"></div>
-                                        <div class="button__line"></div>
-                                        <span class="button__text">Booking</span>
-                                        <div class="button__drow1"></div>
-                                        <div class="button__drow2"></div>
-                                    </a>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <img src="https://images.pexels.com/photos/2869215/pexels-photo-2869215.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                        alt="">
-                    <div class="hero-container">
-                        <div class="hero-content">
-                            <h2 class="hero-head">Explore And Enjoy</h2>
-                            <p class="hero-p">Book Your Room Now</p>
-
-                            <a href="book.html" class="hero-btn">
-                                <div class="container">
-                                    <a target="_blank" href="book.html" class="button type--C">
-                                        <div class="button__line"></div>
-                                        <div class="button__line"></div>
-                                        <span class="button__text">Booking</span>
-                                        <div class="button__drow1"></div>
-                                        <div class="button__drow2"></div>
-                                    </a>
-                                </div>
-                            </a>
-
-                        </div>
-                    </div>
-                </div>
+                <a href="book.html" class="hero-btn">
+                  <div class="container">
+                    <a target="_blank" href="book.html" class="button type--C">
+                      <div class="button__line"></div>
+                      <div class="button__line"></div>
+                      <span class="button__text">Booking</span>
+                      <div class="button__drow1"></div>
+                      <div class="button__drow2"></div>
+                    </a>
+                  </div>
+                </a>
+              </div>
             </div>
-            <div class="swiper-pagination"></div>
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="https://images.pexels.com/photos/161758/governor-s-mansion-montgomery-alabama-grand-staircase-161758.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              alt="" />
+            <div class="hero-container">
+              <div class="hero-content">
+                <h2 class="hero-head">Explore And Enjoy</h2>
+                <p class="hero-p">Book Your Room Now</p>
+
+                <a href="book.html" class="hero-btn">
+                  <div class="container">
+                    <a target="_blank" href="book.html" class="button type--C">
+                      <div class="button__line"></div>
+                      <div class="button__line"></div>
+                      <span class="button__text">Booking</span>
+                      <div class="button__drow1"></div>
+                      <div class="button__drow2"></div>
+                    </a>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="https://images.pexels.com/photos/258154/pexels-photo-258154.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              alt="" />
+            <div class="hero-container">
+              <div class="hero-content">
+                <h2 class="hero-head">Explore And Enjoy</h2>
+                <p class="hero-p">Book Your Room Now</p>
+
+                <a href="book.html" class="hero-btn">
+                  <div class="container">
+                    <a target="_blank" href="book.html" class="button type--C">
+                      <div class="button__line"></div>
+                      <div class="button__line"></div>
+                      <span class="button__text">Booking</span>
+                      <div class="button__drow1"></div>
+                      <div class="button__drow2"></div>
+                    </a>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              alt="" />
+            <div class="hero-container">
+              <div class="hero-content">
+                <h2 class="hero-head">Explore And Enjoy</h2>
+                <p class="hero-p">Book Your Room Now</p>
+
+                <a href="book.html" class="hero-btn">
+                  <div class="container">
+                    <a target="_blank" href="book.html" class="button type--C">
+                      <div class="button__line"></div>
+                      <div class="button__line"></div>
+                      <span class="button__text">Booking</span>
+                      <div class="button__drow1"></div>
+                      <div class="button__drow2"></div>
+                    </a>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="https://images.pexels.com/photos/2869215/pexels-photo-2869215.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              alt="" />
+            <div class="hero-container">
+              <div class="hero-content">
+                <h2 class="hero-head">Explore And Enjoy</h2>
+                <p class="hero-p">Book Your Room Now</p>
+
+                <a href="book.html" class="hero-btn">
+                  <div class="container">
+                    <a target="_blank" href="book.html" class="button type--C">
+                      <div class="button__line"></div>
+                      <div class="button__line"></div>
+                      <span class="button__text">Booking</span>
+                      <div class="button__drow1"></div>
+                      <div class="button__drow2"></div>
+                    </a>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
+        <div class="swiper-pagination"></div>
+      </div>
     </div>
     <!-- main end -->
 
+    <!-- page 2  -->
+    <div class="page2">
+      <div class="page2_main">
+        <div class="page2_left">
+          <h2>WELCOME TO CANARY INN</h2>
+          <h3>– A Landmark of Luxury in the Heart of Hazaribag</h3>
+          <p>
+            Nestled in the tranquil beauty of Hazaribag, Jharkhand, CANARY INN
+            redefines luxury and elegance for the discerning traveler. Designed
+            with a perfect blend of modern sophistication and warm hospitality,
+            our hotel offers a sanctuary of comfort, class, and convenience.
+            <br><br>
+            At CANARY INN, we believe in creating memorable experiences. Whether
+            you're visiting for business, leisure, or a special occasion, our
+            thoughtfully curated services and attention to detail ensure every
+            moment is exceptional. From our opulently designed rooms and suites
+            to our fine-dining restaurant and fully equipped event spaces, every
+            corner of CANARY INN is crafted to delight.
+            <br><br>
+            Located just minutes away from the city’s key landmarks and natural attractions, our
+            hotel provides an ideal base for both exploration and relaxation.
+            With unmatched hospitality, world-class amenities, and a commitment
+            to excellence, CANARY INN stands as the premier destination for
+            luxury in Hazaribag. Discover comfort. Discover elegance. Discover
+            CANARY INN
+          </p>
+        </div>
+        <div class="page2_right">
+          <img
+            src="https://content3.jdmagicbox.com/comp/hazaribagh/l8/9999p6546.6546.141231174946.g2l8/catalogue/canary-inn-hazaribagh-bus-stand-hazaribagh-3-star-hotels-hjs0byyyzw.jpg"
+            alt="" />
+        </div>
+      </div>
+    </div>
+
     <!-- footer -->
     <footer>
-        <div class="footer-con">
-            <div class="f-l-main">
-                <div class="footer-link l-1">
+      <div class="footer-con">
+        <div class="f-l-main">
+          <div class="footer-link l-1">
+            <div class="f-det">
+              <h1 class="footer-head">Cannery Inn</h1>
 
-                    <div class="f-det">
-                        <h1 class="footer-head">Cannery Inn</h1>
+              <p class="p-1">
+                1418 River Drive, Suite 35 Cottonhall, CA 9622 United States
+              </p>
 
-                        <p class="p-1">
-                            1418 River Drive, Suite 35 Cottonhall, CA 9622 United States
-                        </p>
+              <p>demo@demo.com</p>
 
-                        <p>
-                            demo@demo.com
-                        </p>
+              <p>+1 246-645-0695</p>
 
-                        <p>
-                            +1 246-645-0695
-                        </p>
+              <div class="f-i-link">
+                <a href="#">
+                  <i class="fa-brands fa-facebook"></i>
+                </a>
 
-                        <div class="f-i-link">
-                            <a href="#">
-                                <i class="fa-brands fa-facebook"></i>
-                            </a>
+                <a href="#">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
 
-                            <a href="#">
-                                <i class="fa-brands fa-twitter"></i>
-                            </a>
-
-                            <a href="#">
-                                <i class="fa-brands fa-instagram"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="footer-link">
-                    <h4>
-                        COMPANY
-                    </h4>
-                    <div class="f-lnk">
-                        <ul>
-                            <a href="/">
-                                <li>
-                                    Home
-                                    <div class="f-bdr"></div>
-                                </li>
-                            </a>
-                            <a href="room.html">
-                                <li>
-                                    Rooms
-                                    <div class="f-bdr"></div>
-                                </li>
-                            </a>
-                            <a href="photos.html">
-                                <li>
-                                    Photos
-                                    <div class="f-bdr"></div>
-                                </li>
-                            </a>
-                            <a href="about.html">
-                                <li>
-                                    About Us
-                                    <div class="f-bdr"></div>
-                                </li>
-                            </a>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="footer-link">
-                    <h4>
-                        SHOP
-                    </h4>
-                    <div class="f-lnk">
-                        <ul>
-                            <a href="#">
-                                <li>
-                                    Accessories
-                                    <div class="f-bdr"></div>
-                                </li>
-                            </a>
-                            <a href="#">
-                                <li>
-                                    Men
-                                    <div class="f-bdr"></div>
-                                </li>
-                            </a>
-                            <a href="#">
-                                <li>
-                                    Women
-                                    <div class="f-bdr"></div>
-                                </li>
-                            </a>
-                            <a href="#">
-                                <li>
-                                    Clothes
-                                    <div class="f-bdr"></div>
-                                </li>
-                            </a>
-                            <a href="#">
-                                <li>
-                                    Shop All
-                                    <div class="f-bdr"></div>
-                                </li>
-                            </a>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="footer-link">
-                    <h4>
-                        HELP
-                    </h4>
-                    <div class="f-lnk">
-                        <ul>
-                            <a href="#">
-                                <li>
-                                    Customer Service
-                                    <div class="f-bdr"></div>
-                                </li>
-                            </a>
-                            <a href="#">
-                                <li>
-                                    My Account
-                                    <div class="f-bdr"></div>
-                                </li>
-                            </a>
-                            <a href="#">
-                                <li>
-                                    Find a Store
-                                    <div class="f-bdr"></div>
-                                </li>
-                            </a>
-                            <a href="#">
-                                <li>
-                                    Legal & Privacy
-                                    <div class="f-bdr"></div>
-                                </li>
-                            </a>
-                            <a href="#">
-                                <li>
-                                    Contact
-                                    <div class="f-bdr"></div>
-                                </li>
-                            </a>
-
-                            <a href="#">
-                                <li>
-                                    Gift Card
-                                    <div class="f-bdr"></div>
-                                </li>
-                            </a>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="footer-link">
-                    <h4>
-                        SUBSCRIBE
-                    </h4>
-
-                    <div class="f-l-last">
-                        <p>
-                            Be the first to get the latest news about trends, promotions, and much more!
-                        </p>
-
-                        <div class="f-input">
-                            <input type="text" placeholder="Your email address">
-                            <label for="input">
-                                Join
-                            </label>
-                        </div>
-
-                        <h6>Secure payments</h6>
-
-                        <img src="Src/pay.png" alt="" class="pay">
-                    </div>
-                </div>
+                <a href="#">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+              </div>
             </div>
+          </div>
+
+          <div class="footer-link">
+            <h4>COMPANY</h4>
+            <div class="f-lnk">
+              <ul>
+                <a href="/">
+                  <li>
+                    Home
+                    <div class="f-bdr"></div>
+                  </li>
+                </a>
+                <a href="room.html">
+                  <li>
+                    Rooms
+                    <div class="f-bdr"></div>
+                  </li>
+                </a>
+                <a href="photos.html">
+                  <li>
+                    Photos
+                    <div class="f-bdr"></div>
+                  </li>
+                </a>
+                <a href="about.html">
+                  <li>
+                    About Us
+                    <div class="f-bdr"></div>
+                  </li>
+                </a>
+              </ul>
+            </div>
+          </div>
+
+          <div class="footer-link">
+            <h4>SHOP</h4>
+            <div class="f-lnk">
+              <ul>
+                <a href="#">
+                  <li>
+                    Accessories
+                    <div class="f-bdr"></div>
+                  </li>
+                </a>
+                <a href="#">
+                  <li>
+                    Men
+                    <div class="f-bdr"></div>
+                  </li>
+                </a>
+                <a href="#">
+                  <li>
+                    Women
+                    <div class="f-bdr"></div>
+                  </li>
+                </a>
+                <a href="#">
+                  <li>
+                    Clothes
+                    <div class="f-bdr"></div>
+                  </li>
+                </a>
+                <a href="#">
+                  <li>
+                    Shop All
+                    <div class="f-bdr"></div>
+                  </li>
+                </a>
+              </ul>
+            </div>
+          </div>
+
+          <div class="footer-link">
+            <h4>HELP</h4>
+            <div class="f-lnk">
+              <ul>
+                <a href="#">
+                  <li>
+                    Customer Service
+                    <div class="f-bdr"></div>
+                  </li>
+                </a>
+                <a href="#">
+                  <li>
+                    My Account
+                    <div class="f-bdr"></div>
+                  </li>
+                </a>
+                <a href="#">
+                  <li>
+                    Find a Store
+                    <div class="f-bdr"></div>
+                  </li>
+                </a>
+                <a href="#">
+                  <li>
+                    Legal & Privacy
+                    <div class="f-bdr"></div>
+                  </li>
+                </a>
+                <a href="#">
+                  <li>
+                    Contact
+                    <div class="f-bdr"></div>
+                  </li>
+                </a>
+
+                <a href="#">
+                  <li>
+                    Gift Card
+                    <div class="f-bdr"></div>
+                  </li>
+                </a>
+              </ul>
+            </div>
+          </div>
+
+          <div class="footer-link">
+            <h4>SUBSCRIBE</h4>
+
+            <div class="f-l-last">
+              <p>
+                Be the first to get the latest news about trends, promotions,
+                and much more!
+              </p>
+
+              <div class="f-input">
+                <input type="text" placeholder="Your email address" />
+                <label for="input"> Join </label>
+              </div>
+
+              <h6>Secure payments</h6>
+
+              <img src="Src/pay.png" alt="" class="pay" />
+            </div>
+          </div>
         </div>
+      </div>
     </footer>
 
     <div class="c-right">
-        <div class="footer-container">
-            <p>© 2025 Hotel - Development by <a href="https://skillsnation.in/">SkillsNation</a></p>
-        </div>
+      <div class="footer-container">
+        <p>
+          © 2025 Hotel - Development by
+          <a href="https://skillsnation.in/">SkillsNation</a>
+        </p>
+      </div>
     </div>
 
     <!-- footer end -->
@@ -391,21 +459,21 @@
 
     <!-- swiper -->
     <script>
-        var swiper = new Swiper(".mySwiper", {
-            autoplay: {
-                true: true,
-                delay: 1500,
-            },
-            loop: true,
-            pagination: {
-                el: ".swiper-pagination",
-                type: "progressbar",
-            },
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-        });
+      var swiper = new Swiper(".mySwiper", {
+        autoplay: {
+          true: true,
+          delay: 1500,
+        },
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          type: "progressbar",
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
     </script>
 
     <!-- script -->
