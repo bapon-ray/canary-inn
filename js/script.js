@@ -1,3 +1,35 @@
+
+    // Set today's date as default for check-in
+    const today = new Date().toISOString().split("T")[0];
+    const tomorrow = new Date(Date.now() + 86400000).toISOString().split("T")[0];
+
+    document.getElementById("checkin").value = today;
+    document.getElementById("checkout").value = tomorrow;
+
+    document.getElementById("checkin").setAttribute("min", today);
+    document.getElementById("checkout").setAttribute("min", tomorrow);
+
+    // Update checkout min when checkin changes
+    document.getElementById("checkin").addEventListener("change", function () {
+      const checkinDate = new Date(this.value);
+      const newMin = new Date(checkinDate.getTime() + 86400000).toISOString().split("T")[0];
+      document.getElementById("checkout").setAttribute("min", newMin);
+    });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 let hamb = document.querySelector('.hamberger');
 let back = document.querySelector('.back');
 let navLinks = document.querySelector('.navLinks');
@@ -29,10 +61,20 @@ back.addEventListener('click', function () {
 });
 
 
-let submit = document.querySelector(".cta");
+// let submit = document.querySelector(".cta");
 
-submit.addEventListener("click", () => {
-    alert("Thanks For Submit.")
-})
+// submit.addEventListener("click", () => {
+//     alert("Thanks For Submit.")
+// });
+
+
+
+
+
+
+
+
+
+
 
 
